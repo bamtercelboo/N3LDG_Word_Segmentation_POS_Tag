@@ -14,7 +14,8 @@ public:
 	int write(const Instance *pInstance, bool bFile = true)
 	{
 		if (bFile) {
-			if (((ofstream *)m_outf)->is_open()) return -1;
+			//if (((ofstream *)m_outf)->is_open()) return -1;
+			//if (!m_outf.is_open()) return -1;
 
 			const vector<string> &labels = pInstance->labels;
 

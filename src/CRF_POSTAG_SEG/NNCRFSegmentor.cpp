@@ -343,6 +343,7 @@ void Segmentor::train(const string& trainFile, const string& devFile, const stri
 			metric_dev.print();
 
 			if (!m_options.outBest.empty() && metric_dev.getAccuracy() > bestDIS) {
+				std::cout << "outBest......" << std::endl;
 				m_pipe.outputAllInstances(devFile + m_options.outBest, decodeInstResults);
 				bCurIterBetter = true;
 			}
@@ -373,6 +374,7 @@ void Segmentor::train(const string& trainFile, const string& devFile, const stri
 				metric_test.print();
 
 				if (!m_options.outBest.empty() && bCurIterBetter) {
+					std::cout << "outBest......" << std::endl;
 					m_pipe.outputAllInstances(testFile + m_options.outBest, decodeInstResults);
 				}
 			}

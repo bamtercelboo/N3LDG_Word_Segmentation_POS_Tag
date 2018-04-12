@@ -29,7 +29,7 @@ public:
 	inline int startWriting(const string &filename) {
 		if (filename != "") {
 			m_outf = new std::ofstream(filename.c_str());
-
+			//std::ofstream * m_outfopen(filename);
 			if (!m_outf) {
 				std::cout << "Writer::startWriting() open file err: " << filename << std::endl;
 				return -1;
