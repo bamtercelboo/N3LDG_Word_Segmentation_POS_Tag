@@ -1,0 +1,15 @@
+#wordFile =
+seg = true
+maxIter = 1000
+adaAlpha = 0.001
+adaEps = 1e-06
+regParameter = 1e-08
+wordEmbSize = 100
+rnnHiddenSize = 100
+wordEmbSize = 100
+wordEmbFineTune = 1
+dropProb = 0.1
+verboseIter = 100
+batchSize = 1
+maxInstance = -1
+outBest = .debug
